@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Projects
 icon: fas fa-microchip
 order: 1
 ---
@@ -11,14 +12,10 @@ order: 1
 <script>
   (function() {
     let retryCount = 0;
-
     function initRepoWidget() {
       const container = document.getElementById('repo-container');
-      
       if (typeof createRepoWidget === 'function') {
-        console.log("RepoWidget ready, initializing...");
-        container.innerHTML = ''; // Clear previous
-        
+        container.innerHTML = ''; 
         createRepoWidget({
           username: 'wavius',
           containerId: 'repo-container',
@@ -27,8 +24,8 @@ order: 1
           columns: { mobile: 1, tablet: 2, desktop: 3 },
           cardStyles: { 
             backgroundColor: 'var(--card-bg)', 
-            borderRadius: '8px',
-            border: '1px solid var(--main-border-color)'
+            borderRadius: '8px', 
+            border: '1px solid var(--main-border-color)' 
           },
           textStyles: { 
             titleColor: 'var(--link-color)', 
@@ -36,18 +33,12 @@ order: 1
           }
         });
       } else if (retryCount < 10) {
-        // If not ready, wait 200ms and try again
         retryCount++;
         setTimeout(initRepoWidget, 200);
       }
     }
-
     initRepoWidget();
-
-    document.addEventListener('pjax:success', () => {
-      retryCount = 0;
-      initRepoWidget();
-    });
+    document.addEventListener('pjax:success', initRepoWidget);
   })();
 </script>
 
@@ -57,10 +48,8 @@ order: 1
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
-    min-height: 200px; /* Forces visibility even if empty */
+    min-height: 200px;
   }
-
-  /* Ensure RepoWidget children take up space */
   .repo-widget {
     margin-bottom: 0 !important;
     width: 100% !important;
