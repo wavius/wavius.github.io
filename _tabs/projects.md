@@ -4,56 +4,56 @@ icon: fas fa-microchip
 order: 1
 ---
 
-<div id="github-repos" class="repo-grid"></div>
+<div id="github-repos" class="repo-grid">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const username = 'wavius';
+      const container = document.getElementById('github-repos');
+      
+      async function fetchRepos() {
+        try {
+          const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
+          
+          if (!response.ok) {
+            throw new Error(`GitHub API returned ${response.status}`);
+          }
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const username = 'wavius';
-    const container = document.getElementById('github-repos');
-    
-    async function fetchRepos() {
-      try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
-        
-        if (!response.ok) {
-          throw new Error(`GitHub API returned ${response.status}`);
-        }
+          const repos = await response.json();
 
-        const repos = await response.json();
+          if (repos.length === 0) {
+            container.innerHTML = "<p>No public repositories found.</p>";
+            return;
+          }
 
-        if (repos.length === 0) {
-          container.innerHTML = "<p>No public repositories found.</p>";
-          return;
-        }
-
-        container.innerHTML = repos
-          .filter(repo => !repo.fork && !repo.archived) // Professional filter
-          .map(repo => `
-            <div class="repo-card">
-              <div class="repo-header">
-                <i class="fab fa-github"></i>
-                <a href="${repo.html_url}" target="_blank" class="repo-title">${repo.name}</a>
+          container.innerHTML = repos
+            .filter(repo => !repo.fork && !repo.archived) // Professional filter
+            .map(repo => `
+              <div class="repo-card">
+                <div class="repo-header">
+                  <i class="fab fa-github"></i>
+                  <a href="${repo.html_url}" target="_blank" class="repo-title">${repo.name}</a>
+                </div>
+                <p class="repo-desc">${repo.description || 'No description provided.'}</p>
+                <div class="repo-meta">
+                  <span class="repo-lang"><b>${repo.language || 'Code'}</b></span>
+                  <span class="repo-stars">⭐ ${repo.stargazers_count}</span>
+                </div>
               </div>
-              <p class="repo-desc">${repo.description || 'No description provided.'}</p>
-              <div class="repo-meta">
-                <span class="repo-lang"><b>${repo.language || 'Code'}</b></span>
-                <span class="repo-stars">⭐ ${repo.stargazers_count}</span>
-              </div>
-            </div>
-          `).join('');
-      } catch (error) {
-        console.error("Fetch error:", error);
-        container.innerHTML = `
-          <p style="grid-column: 1/-1; text-align: center; padding: 2rem; border: 1px dashed var(--main-border-color);">
-            API limit reached or connection blocked. <br>
-            <a href="https://github.com/${username}" class="btn btn-outline-primary mt-3">View my Projects on GitHub</a>
-          </p>`;
+            `).join('');
+        } catch (error) {
+          console.error("Fetch error:", error);
+          container.innerHTML = `
+            <p style="grid-column: 1/-1; text-align: center; padding: 2rem; border: 1px dashed var(--main-border-color);">
+              API limit reached or connection blocked. <br>
+              <a href="https://github.com/${username}" class="btn btn-outline-primary mt-3">View my Projects on GitHub</a>
+            </p>`;
+        }
       }
-    }
 
-    fetchRepos();
-  });
-</script>
+      fetchRepos();
+    });
+  </script>
+</div>
 
 <style>
   .repo-grid {
