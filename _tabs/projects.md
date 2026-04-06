@@ -15,7 +15,6 @@ order: 1
     function initRepoWidget() {
       const container = document.getElementById('repo-container');
       
-      // Check if library is ready
       if (typeof createRepoWidget === 'function') {
         console.log("RepoWidget ready, initializing...");
         container.innerHTML = ''; // Clear previous
@@ -43,13 +42,27 @@ order: 1
       }
     }
 
-    // Run on load
     initRepoWidget();
 
-    // Fix for Chirpy Pjax navigation
     document.addEventListener('pjax:success', () => {
       retryCount = 0;
       initRepoWidget();
     });
   })();
 </script>
+
+<style>
+  #repo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    min-height: 200px; /* Forces visibility even if empty */
+  }
+
+  /* Ensure RepoWidget children take up space */
+  .repo-widget {
+    margin-bottom: 0 !important;
+    width: 100% !important;
+  }
+</style>
