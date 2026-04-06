@@ -11,7 +11,7 @@ ECE295 (Hardware Design and Communication) had teams work to implement different
 
 ## Design
 
-Our design consisted of 5 main stages show in the block diagram below:
+Our design consisted of 5 main stages shown in the block diagram below:
 
 ![Block Diagram](../assets/img/posts/subsystem_a/block_diagram.png)
 
@@ -55,6 +55,8 @@ Here we chose an active mixer to again avoid passive losses. The Gilbert Cell al
 </div>
 
 ### Low-pass Filter
+
+**Requirements**: 
 - 92 kHz cutoff frequency
 
 We chose a second order Sallen-Key active filter. This topology yielded the same Butterworth response as the band-pass filter without any of the losses.
@@ -64,6 +66,8 @@ We chose a second order Sallen-Key active filter. This topology yielded the same
 </div>
 
 ### Amplifier
+
+**Requirements**: 
 - ≥30 dB post mixer gain
 
 Observant readers may be wondering why we didn't just include the required gain in the low-pass filter or differential amplifier post mixer. The answer to that wonderful question is: we wanted easy control over the final gain by only swapping one resistor. This is accomplished by a non-inverting amplifier, which also keeps our other stages isolated and unaffected.
