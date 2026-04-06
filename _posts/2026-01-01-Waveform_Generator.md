@@ -13,7 +13,7 @@ To handle the power negotiation, I used the IP2721 IC to communicate with 45W US
 
 To handle waveform generation, I integrated an STM32 microcontroller to control an AD9833 chip. By using a rotary encoder and a potentiometer, I can adjust the frequency, phase, and voltage offset of the analog output in real-time. I also included a dedicated LCD header and an STLINK interface, allowing me to debug the system and monitor parameters directly on the device.
 
-![Waveform Generator PCB](../assets/img/posts/wfg/wfg.png)
+![Waveform Generator PCB](../assets/img/posts/wfg/wfg_pcb.jpg)
 
 This was my first 4-layer PCB design, and stepping up from 2 layers was a nice change. I've since used it to power many circuits up to 100mA without any issue. 
 

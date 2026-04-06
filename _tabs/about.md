@@ -12,7 +12,7 @@ I have a background in PCB layout, analog circuit simulation, and embedded syste
 
 <br>
 
-I really love my girlfriend, tennis, and cats 😻. Here are some doodles from my amazing girlfriend <3
+I really love my girlfriend 🩵🩶, family, tennis, and cats 😻. Here are some doodles from my amazing girlfriend <3
 
 ![Cat](../assets/img/tabs/about/steph_cat.png){: w="500" .left}
 ![Jinx and Vi](../assets/img/tabs/about/jinx_vi_doodle.png){: w="500" .left}

@@ -5,7 +5,7 @@ categories: [Hardware, Digital Systems]
 tags: [Verilog, Quartus, ModelSim]
 ---
 
-For the final project in my Digital Systems class, I implemented a Step Sequencer on the DE1-SoC. This class was my introduction to Verilog and FPGA development, and I wanted to diverge from the common games most others made. 
+For the final project in ECE241 (Digital Systems), I implemented a Step Sequencer on the DE1-SoC. This class was my introduction to Verilog and FPGA development, and I wanted to diverge from the games most others made. 
 
 My first idea for this project was to create a waveform generator where you could actually "draw" a wave on the VGA display and have the FPGA output that exact analog signal. However, after talking it over with one of my TAs, I realized that the DE1-SoC doesn't have a built-in DAC. Without a Digital-to-Analog Converter, generating a raw analog voltage for a custom wave wasn't going to be easily feasible.
 
@@ -13,8 +13,10 @@ My TA suggested that instead of a pure analog output, I could pivot to audio and
 
 ![Step Sequencer](../assets/img/posts/step_sequencer/step_sequencer.png)
 
-In this version, I built a grid on the VGA display representing the middle C octave of a piano, shown in the image on the left. Users can interact with the grid to select specific notes, which the FPGA then sequences and plays back in real-time. 
+In this version, I built a grid on the VGA display representing the middle C octave of a piano, shown in the image above. Users can interact with the grid using a PS2 keyboard to select specific notes, which the FPGA then sequences and plays back in real-time. The current position in the grid is shown by the red square cursor, and selected squares turn blue.
 
-<br>
+For further control, I added the ability to choose the number of times to loop through the sequence and to select the BPM to step through the loops. This information is displayed on the HEXs.
 
-[![Logic Analyzer Project](https://opengraph.githubassets.com/1/wavius/Step-Sequencer)](https://github.com/wavius/Logic-Analyzer)
+For specific information on functionality, check out the project repository below.
+
+[![Logic Analyzer Project](https://opengraph.githubassets.com/1/wavius/Step-Sequencer)](https://github.com/wavius/Step-Sequencer)
