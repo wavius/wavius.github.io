@@ -3,6 +3,7 @@ title: Logic Analyzer
 date: 2026-04-01 00:05:00 +/-TTTT
 categories: [Hardware, Digital Systems]
 tags: [Verilog, C, RISC-V, Quartus, ModelSim, Platform Designer, Oscilloscope, Waveform Generator]
+permalink: /logic-analyzer/
 ---
 [Images coming soon!]
  

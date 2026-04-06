@@ -3,6 +3,7 @@ title: windsor-stringing.ca
 date: 2025-08-22 00:05:00 +/-TTTT
 categories: [Software, Web Dev]
 tags: [HTML, CSS]
+permalink: /windsor-stringing/
 ---
 
 This project came about from my dad, who had just recently started a tennis racquet stringing business and wanted a website to display his services.
