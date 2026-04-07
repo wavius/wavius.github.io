@@ -12,11 +12,13 @@ My first idea for this project was to create a waveform generator where you coul
 
 My TA suggested that instead of a pure analog output, I could pivot to audio and output a signal to a speaker, which was much more feasible for the board's hardware. After thinking about it some more, I decided to move toward a Step Sequencer. 
 
-![Step Sequencer](../assets/img/posts/step_sequencer/step_sequencer.png)
+![SS](../assets/img/posts/step_sequencer/ss_inlab.jpg)
 
-In this version, I built a grid on the VGA display representing the middle C octave of a piano, shown in the image above. Users can interact with the grid using a PS2 keyboard to select specific notes, which the FPGA then sequences and plays back in real-time. The current position in the grid is shown by the red square cursor, and selected squares turn blue.
+In this version, I built a grid on the VGA display representing the middle C octave of a piano. Users can interact with the grid using a PS2 keyboard to select specific notes, which the FPGA then sequences and plays back in real-time. The current position in the grid is shown by the red square cursor, and selected squares turn blue.
 
 For further control, I added the ability to choose the number of times to loop through the sequence and to select the BPM to step through the loops. This information is displayed on the HEXs.
+
+![Step Sequencer](../assets/img/posts/step_sequencer/step_sequencer.png)
 
 For specific information on functionality, check out the project repository below.
 
