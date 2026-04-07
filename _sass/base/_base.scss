@@ -5,6 +5,12 @@
 @use '../themes/light';
 @use '../themes/dark';
 
+/* A small cat that appears only when hovering over your name */
+.site-title:hover::after {
+  content: ' ≽^•༚•^≼';
+  transition: all 0.3s ease;
+}
+
 :root {
   font-size: 16px;
 }
