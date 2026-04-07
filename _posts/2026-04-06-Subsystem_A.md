@@ -148,3 +148,5 @@ Measures the total signal gain throughout the subsystem.
 ## Final Thoughts
 
 I am really proud of our design and I think we did super well! This course has been one of my favorites, and I enjoyed it quite a lot. Special thanks to my teammates James and Joshua for their hard work.
+
+The Spice and Altium files are on my [GitHub](https://github.com/wavius/Subsystem-A-ECE295).
