@@ -8,7 +8,7 @@ order: 5
 
 Howdy, I'm David <span style="color: #A020F0;">'wavius'</span> Ceuca, a second year Computer Engineering student at the University of Toronto, with a passion for hardware and electronics.
 
-I have a background in PCB layout, analog circuit simulation, and embedded systems, with recent projects focusing more on FPGA development. My academic curiosity is currently leaning toward Analog IC design, though that may change in the future as I continue to learn about more interesting hardware.
+I have a background in PCB design, analog electronics, and embedded systems, with recent projects focusing more on FPGA development. My academic curiosity is currently leaning toward Analog IC design, though that may change in the future as I continue to learn about more interesting hardware.
 
 <br>
 
