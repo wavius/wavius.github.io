@@ -2,7 +2,7 @@
 layout: page
 title: 
 ---
-Glad you could make it.
+Glad you could make it. 
 
 <div align="left">
   <img src="../assets/img/tabs/hidden/jinx_ekko.jpg" alt="JInx & Ekko" width="500px">
