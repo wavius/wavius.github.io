@@ -19,20 +19,17 @@ I really love my girlfriend 🩵🩶, family, tennis, and cats 😻. Here are so
 ![Jinx and Vi](../assets/img/tabs/about/steph_jinx.png){: w="500" .left}
 
 <script>
-  (function() {
+  function initSecretTrigger() {
+    const trigger = document.getElementById('secret-trigger');
     let clickCount = 0;
     let timer;
-    const trigger = document.getElementById('secret-trigger');
-    
     if (trigger) {
       trigger.addEventListener('click', function() {
         clickCount++;
-        
-        // Clear existing timer so the 2-second window resets on every click
         clearTimeout(timer);
         
         if (clickCount === 3) {
-          window.location.href = '/hidden/'; 
+          window.location.href = "{{ '/hidden/' | relative_url }}";
         }
 
         timer = setTimeout(() => {
@@ -40,5 +37,7 @@ I really love my girlfriend 🩵🩶, family, tennis, and cats 😻. Here are so
         }, 2000);
       });
     }
-  })();
+  }
+  initSecretTrigger();
+  document.addEventListener('pjax:success', initSecretTrigger);
 </script>
