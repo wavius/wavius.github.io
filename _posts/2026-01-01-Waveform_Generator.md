@@ -14,7 +14,6 @@ To handle the power negotiation, I used the IP2721 IC to communicate with 45W US
 
 <img src="../assets/img/posts/wfg/wfg_pcb.jpg" width="1000" alt="Waveform Generator PCB">
 <br>
-<br>
 
 This was my first 4-layer PCB design, and stepping up from 2 layers was a nice change. I've since used it to power many circuits up to 100mA without any issue. 
 
@@ -32,19 +31,15 @@ For the waveform generation, I set up the buttons to easily toggle between sine,
 
 <img src="../assets/img/posts/wfg/type.gif" width="1000" alt="Waveform Type">
 <br>
-<br>
 
 I used a rotary encoder to control the output frequency and phase. Clicking the encoder toggles between the two modes.
 
 <img src="../assets/img/posts/wfg/frequency.gif" width="1000" alt="Frequency Control">
 <br>
-<br>
 
 The output voltage amplitude is controlled by a potentiometer that sets the gain of an op-amp stage. Looking back, I wish I had AC coupled the op-amp input, but it works well enough.
 
 <img src="../assets/img/posts/wfg/amplitude.gif" width="1000" alt="Amplitude Control">
-<br>
-<br>
 
 ### System Interface
 
@@ -52,12 +47,10 @@ The header in the middle allows for an optioanl LCD display to be connected, whi
 
 <img src="../assets/img/posts/wfg/pcb_lcd.jpg" width="1000" alt="PCB LCD Display">
 <br>
-<br>
 
 All firmware runs on an STM32F030C8T6 microcontroller and programming this board was really easy thanks to the onboard ST-LINK. I used interrupts for the rotary encoder and buttons so I wouldn't miss inputs by polling.
 
 <img src="../assets/img/posts/wfg/mcu.jpg" width="1000" alt="MCU">
-<br>
 <br>
 
 As always, the files for this project are available on my [GitHub](https://github.com/wavius/Waveform-Generator).
