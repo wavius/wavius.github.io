@@ -40,7 +40,7 @@ I used a rotary encoder to control the output frequency and phase. Clicking the 
 <br>
 <br>
 
-The output voltage amplitude is controlled by a potentiometer that sets the gain of an op-amp stage. Looking back, I wish I had AC coupled the op-amp output, but it works well enough.
+The output voltage amplitude is controlled by a potentiometer that sets the gain of an op-amp stage. Looking back, I wish I had AC coupled the op-amp input, but it works well enough.
 
 <img src="../assets/img/posts/wfg/amplitude.gif" width="1000" alt="Amplitude Control">
 <br>
