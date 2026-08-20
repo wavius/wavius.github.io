@@ -19,3 +19,5 @@ The SMD resistors were a little challenging to solder at first, but the LEDs wer
 Even now I'm still quite fond of the purple solder mask 😼.
 
 If you're looking for a cute gift, the files for this project are available on my [GitHub](https://github.com/wavius/PCB-Designs/tree/main).
+
+[![PCB-Designs](https://opengraph.githubassets.com/1/wavius/PCB-Designs)](https://github.com/wavius/PCB-Designs)

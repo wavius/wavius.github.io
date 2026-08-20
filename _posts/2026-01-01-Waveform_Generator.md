@@ -43,7 +43,7 @@ The output voltage amplitude is controlled by a potentiometer that sets the gain
 
 ### System Interface
 
-The header in the middle allows for an optioanl LCD display to be connected, which displays the real-time waveform, frequency, and phase parameters so I know exactly what's being output.
+The header in the middle allows for an optional LCD display to be connected, which displays the real-time waveform, frequency, and phase parameters so I know exactly what's being output.
 
 <img src="../assets/img/posts/wfg/pcb_lcd.jpg" width="1000" alt="PCB LCD Display">
 <br>
@@ -54,3 +54,5 @@ All firmware runs on an STM32F030C8T6 microcontroller and programming this board
 <br>
 
 As always, the files for this project are available on my [GitHub](https://github.com/wavius/Waveform-Generator).
+
+[![Waveform-Generator](https://opengraph.githubassets.com/1/wavius/Waveform-Generator)](https://github.com/wavius/Waveform-Generator)

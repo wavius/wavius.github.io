@@ -24,7 +24,7 @@ My team decided to go with a fully discrete design as we thought it was the more
 - 8 and 16 MHz cutoff frequencies
 - Amplitude balance within 1dB over the passband
 
-We opted for a 3rd-order passive Butterworth filter for this stage. While we originally considered an active topology to mitigate insertion loss, the MHz-range bandwidth made it unfeasible for most op amps. The Butterworth response seemed like the most logical choice here; its maximally flat passband was would maintain the amplitude balance required across the 8-16 MHz window.
+We opted for a 3rd-order passive Butterworth filter for this stage. While we originally considered an active topology to mitigate insertion loss, the MHz-range bandwidth made it unfeasible for most op amps. The Butterworth response seemed like the most logical choice here; its maximally flat passband would maintain the amplitude balance required across the 8-16 MHz window.
 
 <div align="left">
   <img src="../assets/img/posts/subsystem_a/bpf_sch.png" alt="Band-pass Filter Schematic" width="600px">
@@ -79,7 +79,7 @@ Observant readers may be wondering why we didn't just include the required gain 
 
 ## PCB Assembly
 
-Near the end of the semester. We got to actually assemble and test our design. Our components were all SMDs apart from the connectors, but I had all the equipment (heat gun, soldering iron) for my team to assemble it without much trouble.
+Near the end of the semester, we got to actually assemble and test our design. Our components were all SMDs apart from the connectors, but I had all the equipment (heat gun, soldering iron) for my team to assemble it without much trouble.
 
 I really love how the silkscreen turned out (and the design of course 😉).
 
@@ -105,7 +105,7 @@ We went to the lab to test our board and were very pleased with the results! We 
 
 ![Testing](../assets/img/posts/subsystem_a/testing.jpg)
 
-For in depth testing, the course provided us with Python scripts that would control the lab equipment and produce Bode plots to evaluate our different stages. I included everything below, and you can compare our results to the subsystem requirements in the design section to judge how we did for yourself.
+For in-depth testing, the course provided us with Python scripts that would control the lab equipment and produce Bode plots to evaluate our different stages. I included everything below, and you can compare our results to the subsystem requirements in the design section to judge how we did for yourself.
 
 #### Band-pass Filter
 Band-pass filter frequency response.
@@ -150,3 +150,5 @@ Measures the total signal gain throughout the subsystem.
 I am really proud of our design and I think we did super well! This course has been one of my favorites, and I enjoyed it quite a lot. Special thanks to my teammates James and Joshua for their hard work.
 
 The Spice and Altium files are on my [GitHub](https://github.com/wavius/Subsystem-A-ECE295).
+
+[![Subsystem-A-ECE295](https://opengraph.githubassets.com/1/wavius/Subsystem-A-ECE295)](https://github.com/wavius/Subsystem-A-ECE295)
