@@ -21,7 +21,6 @@ You can play against my Agent and the other algorithms below or on its [GitHub P
     style="border:none; width:100%; height:500px;">
   </iframe>
 </div>
-<br>
 
 ## Architecture
 
@@ -38,6 +37,7 @@ In the end, the agent was beating Minimax pretty consistently. It might not have
 <div align="left">
   <img src="../assets/img/posts/reversi/reversi.png" alt="Benchmark" width="600px">
 </div>
+<br>
 
 The source code can be found on [GitHub](https://github.com/wavius/reversi-agent).
 
