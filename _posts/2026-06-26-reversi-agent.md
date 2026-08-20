@@ -32,7 +32,6 @@ In the end, the agent was beating Minimax pretty consistently. It might not have
 <div align="left">
   <img src="../assets/img/posts/reversi/reversi.png" alt="Benchmark" width="600px">
 </div>
-<br>
 
 The source code can be found on [GitHub](https://github.com/wavius/reversi-agent).
 
