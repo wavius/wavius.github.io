@@ -1,5 +1,5 @@
 ---
-title: Desk-Clock-Timer
+title: "Desk Clock Timer"
 date: 2026-08-19 00:05:00 +/-TTTT
 categories: [Hardware, PCB Design]
 tags: [C, Altium Designer, Soldering, Oscilloscope, Waveform Generator, Digital Multimeter]

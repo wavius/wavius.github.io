@@ -1,5 +1,5 @@
 ---
-title: reversi-agent
+title: "Reversi Agent"
 date: 2026-06-26 00:05:00 +/-TTTT
 categories: [Software]
 tags: [Python]
