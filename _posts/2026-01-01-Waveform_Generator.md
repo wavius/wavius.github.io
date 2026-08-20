@@ -19,13 +19,13 @@ This was my first 4-layer PCB design, and stepping up from 2 layers was a nice c
 
 After putting it off for a few months, I finally got around to finishing the firmware for this board. Here is a look at what it can do:
 
-### Power Supply
+## Power Supply
 
 The board provides easy access to the power rails through standard screw terminals, with +12V, -12V, +5V, and +3V3 available for breadboarding.
 
 <img src="../assets/img/posts/wfg/terminals.jpg" width="1000" alt="Screw Terminals">
 
-### Signal Output
+## Signal Output
 
 For the waveform generation, I set up the buttons to easily toggle between sine, square, and triangle waveforms. I actually realized a bit too late that the AD9833 doesn't natively support sawtooth waves (oops), so that button just toggles a half-frequency square wave instead.
 
@@ -41,7 +41,7 @@ The output voltage amplitude is controlled by a potentiometer that sets the gain
 
 <img src="../assets/img/posts/wfg/amplitude.gif" width="1000" alt="Amplitude Control">
 
-### System Interface
+## System Interface
 
 The header in the middle allows for an optional LCD display to be connected, which displays the real-time waveform, frequency, and phase parameters so I know exactly what's being output.
 
