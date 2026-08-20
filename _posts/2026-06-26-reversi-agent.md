@@ -3,7 +3,7 @@ title: "Reversi Agent"
 date: 2026-06-26 00:05:00 +/-TTTT
 categories: [Software]
 tags: [Python]
-permalink: /reversi-agent/
+permalink: /reversi/
 ---
 
 In my first year of engineering I took APS105, an introductory course on the C programming language. One of the labs in this course involved creating an algorithm to play Reversi. To make it more engaging for students, the profs created a leaderboard to rank the best algorithms. Despite quite a bit of work, I think I placed around 15th or so, while one of my friends placed in the top 3.
