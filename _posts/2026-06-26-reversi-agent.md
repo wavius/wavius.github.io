@@ -1,7 +1,7 @@
 ---
 title: "Reversi Agent"
 date: 2026-06-26 00:05:00 +/-TTTT
-categories: [Software]
+categories: [Software, Projects]
 tags: [Python]
 permalink: /reversi/
 ---
