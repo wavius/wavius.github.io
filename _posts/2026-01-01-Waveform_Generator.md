@@ -4,8 +4,7 @@ date: 2026-01-01 00:05:00 +/-TTTT
 categories: [Hardware, PCB Design]
 tags: [C, LTSpice, Altium Designer, Soldering, Oscilloscope, Waveform Generator, Digital Multimeter]
 permalink: /wave-gen/
-media_subpath: /assets/img/posts/wfg
-image: wfg_pcb.jpg
+image: /assets/img/posts/wfg/wfg_pcb.jpg
 ---
 
 Earlier this year, as I started diving deeper into breadboarding and analog circuits, I realized I didn't have access to a bench power supply outside of the university lab.

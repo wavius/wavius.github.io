@@ -4,8 +4,7 @@ date: 2025-11-15 00:05:00 +/-TTTT
 categories: [Hardware, Digital Systems]
 tags: [Verilog, Quartus, ModelSim]
 permalink: /step-sequencer/
-media_subpath: /assets/img/posts/step_sequencer
-image: ss_inlab.jpg
+image: /assets/img/posts/step_sequencer/ss_inlab.jpg
 ---
 
 For the final project in ECE241 (Digital Systems), I implemented a Step Sequencer on the DE1-SoC. This class was my introduction to Verilog and FPGA development, and I wanted to diverge from the games most others made. 

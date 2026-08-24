@@ -4,8 +4,7 @@ date: 2025-12-01 00:05:00 +/-TTTT
 categories: [Hardware, PCB Design]
 tags: [Altium Designer, Soldering, Digital Multimeter]
 permalink: /led-heart/
-media_subpath: /assets/img/posts/heart
-image: heart_pcb.jpg
+image: /assets/img/posts/heart/heart_pcb.jpg
 ---
 
 ![LED Heart Keychain PCB](/assets/img/posts/heart/heart_pcb.jpg){: .left w="250"} 
