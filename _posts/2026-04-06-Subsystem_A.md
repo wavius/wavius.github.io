@@ -4,6 +4,8 @@ date: 2026-04-04 00:05:00 +/-TTTT
 categories: [Hardware, Analog Design]
 tags: [LTSpice, Altium Designer, Soldering, Oscilloscope, Waveform Generator, Digital Multimeter]
 permalink: /subsystem-a/
+media_subpath: /assets/img/posts/subsystem_a
+image: sysA_pcb.jpg
 ---
 
 ## Overview

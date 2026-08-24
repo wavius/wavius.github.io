@@ -4,6 +4,8 @@ date: 2026-06-26 00:05:00 +/-TTTT
 categories: [Software, Projects]
 tags: [Python]
 permalink: /reversi/
+media_subpath: /assets/img/posts/reversi
+image: reversi.png
 ---
 
 ## Overview

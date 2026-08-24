@@ -4,6 +4,8 @@ date: 2026-04-01 00:05:00 +/-TTTT
 categories: [Hardware, Digital Systems]
 tags: [Verilog, C, RISC-V, Quartus, ModelSim, Platform Designer, Oscilloscope, Waveform Generator]
 permalink: /logic-analyzer/
+media_subpath: /assets/img/posts/logic_analyzer
+image: la_inlab1.jpg
 ---
 
 For our final project in ECE243 (Computer Organization), my partner and I turned our DE1-SoC FPGA into a 16-channel Logic Analyzer.
