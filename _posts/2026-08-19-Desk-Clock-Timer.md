@@ -4,7 +4,7 @@ date: 2026-08-19 00:05:00 +/-TTTT
 categories: [Hardware, PCB Design]
 tags: [C, Altium Designer, Soldering, Oscilloscope, Waveform Generator, Digital Multimeter]
 permalink: /desk-clock-timer/
-image: https://opengraph.githubassets.com/1/Drmarbles5/Desk-Clock-Timer-Thing
+image: /assets/img/posts/clock_timer/PCB.jpg
 mermaid: true
 ---
 
@@ -13,6 +13,11 @@ mermaid: true
 <!-- TODO: Add overview (motivation, what it is, current status). -->
 
 It was important to consider return currents at this frequency, as current will try to find the lowest inductance -> lowest impedance path and stay underneath the signal trace -> solid ground beneath is crucial.
+
+<div align="left">
+  <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="LED Demo" width="600px">
+</div>
+<br>
 
 ## Demo
 
