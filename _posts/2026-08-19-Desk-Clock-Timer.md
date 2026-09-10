@@ -10,11 +10,11 @@ mermaid: true
 
 ## Overview
 
-A friend of mine saw a pomodoro timer online that he wanted to purchase, although it was a little expensive. I proposed that we could just do it ourselves for cheaper and for fun. The idea was to have a PCB driving an E-ink display. On the display, you could display a clock, current song playing on Spotify, Pomodoro timer, etc. We wanted it to be battery powered and rechargable over USB-C, as well as connect over Bluetooth for convencience. We also wanted to design a case we could 3D print in a CAD program like SolidWorks, which I had no prior experience with.
+A friend of mine saw a pomodoro timer online that he wanted to purchase, but it was a little expensive. I proposed that we just build our own for fun (and cheaper). The idea was a PCB driving an E-ink display, showing a clock, the current song playing on Spotify, a Pomodoro timer, etc. We wanted it battery powered and rechargeable over USB-C, with Bluetooth for convenience. We also wanted to design a case we could 3D print in a CAD program like SolidWorks, which I had no prior experience with (yay).
 
-I hadn't done any work with any kind of Bluetooth before, so of course I wanted to give it a try. I also wanted to move on to projects that would turn into complete products I'd use day to day. It was also a good opportunity to teach my younger brother a bit about PCB design, so he did the MCU decoupling and SPI connections while my friend and I focused on the RF side, namely the 2.4 GHz antenna and filtering for Bluetooth. 
+I hadn't done any work with any kind of Bluetooth before either, so of course I wanted to give it a try. I also wanted to move on to projects that would ultimately become complete products I'd use day to day, so this was perfect. Since the main part of the board would be an MCU I'd wired a million times, it was a perfect opportunity to teach my younger brother a bit about PCB design. He did the MCU decoupling and SPI connections while my friend and I focused on the RF side, namely the 2.4 GHz antenna and filtering for Bluetooth. 
 
-I really enjoy the design considerations that come with RF work: impedance matching, signal integrity, proper grounding, and return currents, just to name a few. I think that while routing this board I really understood what return currents were and how they behaved. 
+I really enjoy the design considerations that come with RF work: impedance matching, signal integrity, proper grounding, and return currents, just to name a few. While routing this board, I finally understood what return currents were and how they behaved, which came with some reflection on an old design that I wish I could've changed. I hope to do more complex RF projects in the future, but one step at a time 😉.
 
 <div align="left">
   <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="PCB" width="600px">
