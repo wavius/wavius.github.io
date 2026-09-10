@@ -20,7 +20,7 @@ I really enjoy the design considerations that come with RF work: impedance match
   <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="PCB" width="600px">
 </div>
 
-I'm happy with how small I got the PCB to be.
+I'm happy with how small I got the PCB to be and that the antenna works really well! It's super neat having it be a trace instead of an extension.
 
 ## Demo
 
