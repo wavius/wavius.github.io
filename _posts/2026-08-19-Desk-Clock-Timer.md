@@ -19,7 +19,6 @@ I really enjoy the design considerations that come with RF work: impedance match
 <div align="left">
   <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="PCB" width="600px">
 </div>
-<br>
 
 I'm happy with how small I got the PCB to be.
 
