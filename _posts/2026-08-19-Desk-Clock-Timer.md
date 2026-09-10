@@ -14,7 +14,7 @@ A friend of mine saw a pomodoro timer online that he wanted to purchase, althoug
 
 I hadn't done any work with any kind of Bluetooth before, so of course I wanted to give it a try. I also wanted to move on to projects that would turn into complete products I'd use day to day. It was also a good opportunity to teach my younger brother a bit about PCB design, so he did the MCU decoupling and SPI connections while my friend and I focused on the RF side, namely the 2.4 GHz antenna and filtering for Bluetooth. 
 
-I really enjoy the design considerations that come with RF work: impedance matching, signal integrity, proper grounding, and return currents, just to name a few. I think that while routing this board I really understood what return currents were and how they behaved.
+I really enjoy the design considerations that come with RF work: impedance matching, signal integrity, proper grounding, and return currents, just to name a few. I think that while routing this board I really understood what return currents were and how they behaved. 
 
 <div align="left">
   <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="PCB" width="600px">
