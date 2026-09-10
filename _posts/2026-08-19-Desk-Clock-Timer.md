@@ -10,20 +10,22 @@ mermaid: true
 
 ## Overview
 
-A friend of mine saw a pomodoro timer online that he wanted to purchase, although it was a little expensive. I proposed that we could just do it ourselves for cheaper and for fun. The idea was to have a PCB driving an E-ink display. On the display, you could display a clock, current song playing on Spotify, Pomodoro timer, etc. We wanted it to be battery powered and rechargable over USB-C, as well as connect over Bluetooth for convencience. A 3D printed case was also in our plans.
+A friend of mine saw a pomodoro timer online that he wanted to purchase, although it was a little expensive. I proposed that we could just do it ourselves for cheaper and for fun. The idea was to have a PCB driving an E-ink display. On the display, you could display a clock, current song playing on Spotify, Pomodoro timer, etc. We wanted it to be battery powered and rechargable over USB-C, as well as connect over Bluetooth for convencience. We also wanted to design a case we could 3D print in a CAD program like SolidWorks, which I had no prior experience with.
 
-I hadn't done any work with any kind of Bluetooth before, so that was the most interesting part to me. I also wanted to transition to working on stuff that I would use day to day, so this was perfect in that regard. I used this project as an opportunity to teach my younger brother a little bit about PCB design, and he did all the MCU decoupling and SPI connections, while my friend and I focused on the RF side, including the 2.4 GHz antenna, impedance matching, and filtering for Bluetooth.
+I hadn't done any work with any kind of Bluetooth before, so of course I wanted to give it a try. I also wanted to move on to projects that would turn into complete products I'd use day to day. It was also a good opportunity to teach my younger brother a bit about PCB design, so he did the MCU decoupling and SPI connections while my friend and I focused on the RF side, namely the 2.4 GHz antenna and filtering for Bluetooth. 
 
-It was important to consider return currents at this frequency, as current will try to find the lowest inductance -> lowest impedance path and stay underneath the signal trace -> solid ground beneath is crucial.
+I really enjoy the design considerations that come with RF work: impedance matching, signal integrity, proper grounding, and return currents, just to name a few. I think that while routing this board I really understood what return currents were and how they behaved.
 
 <div align="left">
-  <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="LED Demo" width="600px">
+  <img src="../assets/img/posts/clock_timer/PCB.jpg" alt="PCB" width="600px">
 </div>
 <br>
 
+I'm happy with how small I got the PCB to be.
+
 ## Demo
 
-The board connects over USB or Bluetooth Low Energy (BLE) and advertises as `DCLKTIM`. As a first test of the wireless link, writing to the P2P Server characteristic toggles the blue user LED — `0x01` turns it on, `0x00` turns it off.
+The board connects over USB or Bluetooth Low Energy (BLE) and advertises as `DCLKTIM`. As a first test of the wireless link, writing to the P2P Server characteristic toggles the blue user LED -> `0x01` turns it on, `0x00` turns it off.
 
 <div align="left">
   <img src="../assets/img/posts/clock_timer/led_demo.gif" alt="LED Demo" width="600px">
@@ -66,7 +68,7 @@ flowchart TD
 
 ## Hardware
 
-The board is a compact STM32-controlled desk clock, powered over USB-C with a 4200 mAh lithium battery, driving a 7.5" E-ink display. The design was a big lesson in RF layout, and a few things I paid extra attention to are highlighted below.
+The board is a compact STM32-controlled desk clock, powered over USB-C with a 4200 mAh lithium battery, driving a 7.5" E-ink display. The next sections explain some of the key considerations in this design.
 
 ### 2.4 GHz Antenna + RF Trace
 
@@ -76,7 +78,9 @@ The RF trace is routed as a coplanar waveguide with the reference ground directl
 
 ### Shielding & Return Currents
 
-Shielding vias are placed along the RF trace to stitch the top-side ground pour to the inner ground plane, forming a cage that reduces coupling and keeps the impedance stable. The solid ground directly under the trace also gives the return current a tight, direct path, which shrinks the loop area and cuts radiated noise.
+At radio frequencies, the trace inductance starts to become significant in terms of impedance (inductor impedance is proportional to frequency), so current will try to find the lowest inductance and therefore the lowest impedance path. This happens to be directly underneath the signal trace, so having a solid ground plane beneath is crucial.
+
+So, shielding vias are placed along the RF trace to stitch the top-side ground pour to the inner ground plane, forming a cage that reduces coupling and keeps the impedance stable.
 
 ### Antenna Keep-out
 
@@ -84,7 +88,7 @@ The zone around the antenna is kept clear of copper pours and ground planes so n
 
 ### E-Ink Boost Converter
 
-The E-ink panel needs a higher drive voltage than the 3.3 V rail, so a boost converter steps it up to about 22 V. The switching node and inductor loop are kept tight, short, and away from the RF traces to minimize EMI and switching losses — noise here would couple straight into the radio.
+The E-ink panel needs a higher drive voltage than the 3.3 V rail, so a boost converter steps it up to about 22 V. The switching node and inductor loop are kept tight, short, and away from the RF traces to minimize EMI and switching losses -> noise here would couple straight into the radio.
 
 ### USB-C
 
