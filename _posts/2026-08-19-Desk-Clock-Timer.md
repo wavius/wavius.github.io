@@ -10,7 +10,9 @@ mermaid: true
 
 ## Overview
 
-<!-- TODO: Add overview (motivation, what it is, current status). -->
+A friend of mine saw a pomodoro timer online that he wanted to purchase, although it was a little expensive. I proposed that we could just do it ourselves for cheaper and for fun. The idea was to have a PCB driving an E-ink display. On the display, you could display a clock, current song playing on Spotify, Pomodoro timer, etc. We wanted it to be battery powered and rechargable over USB-C, as well as connect over Bluetooth for convencience. A 3D printed case was also in our plans.
+
+I hadn't done any work with any kind of Bluetooth before so that was the most interesting part to me. I also wanted to transition to working on stuff that I would use day to day, so this was perfect in that regard.
 
 It was important to consider return currents at this frequency, as current will try to find the lowest inductance -> lowest impedance path and stay underneath the signal trace -> solid ground beneath is crucial.
 
