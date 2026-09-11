@@ -6,9 +6,11 @@ order: 5
 
 ![Me](../assets/img/tabs/about/ME!!!.jpg){: w="200" .left}
 
-Howdy, I'm David <span id="secret-trigger" style="color: #A020F0; cursor: default; user-select: none;">'wavius'</span> Ceuca, a second year Computer Engineering student at the University of Toronto, with a passion for hardware and electronics.
+Howdy, I'm David <span id="secret-trigger" style="color: #A020F0; cursor: default; user-select: none;">'wavius'</span> Ceuca, a third year Computer Engineering student at the University of Toronto. 
 
-I have a background in PCB design, analog electronics, and embedded systems, with recent projects focusing more on FPGA development. My academic curiosity is currently leaning toward Analog IC design, though that may change in the future as I continue to learn about more interesting hardware.
+I'm most interesting in hardware and electronics, with a background in PCB design, analog electronics, and embedded systems. 
+
+My academic curiosity is currently leaning toward Analog IC design, though that may change in the future as I continue to learn about more interesting hardware.
 
 <br>
 
